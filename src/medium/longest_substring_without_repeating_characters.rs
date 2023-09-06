@@ -1,4 +1,5 @@
-
+use std::collections::{HashMap};
+use std::cmp::max;
 /**
 Given a string s, find the length of the longest substring without repeating characters.
 ```
@@ -48,9 +49,6 @@ a b c a b c b b
 a b c a b c b b
 ```
 */
-use std::collections::{HashMap};
-use std::cmp::max;
-
 pub fn main(s: String) -> i32 {
     let mut map = HashMap::new();
     let mut res = 0;
